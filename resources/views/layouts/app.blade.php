@@ -27,6 +27,9 @@
         <div class="app-body">
             @include('layouts.sidebar')
             <main class="main">
+                @yield('breadcrumb')
+
+                @yield('search')
                 <div class="container-fluid">
                     <div class="animated fadeIn mt-3">
                         @yield('content')
@@ -35,6 +38,9 @@
             </main>
         </div>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    @yield('script')
 </body>
 
 </html>

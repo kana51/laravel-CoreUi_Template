@@ -1,3 +1,4 @@
+@section('sidebar')
 <div class="sidebar">
     <nav class="sidebar-nav">
         <ul class="nav">
@@ -13,11 +14,6 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./posts">
-                    <i class="nav-icon icon-docs"></i> Posts
-                </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="nav-icon icon-lock"></i> Roles
                 </a>
@@ -26,3 +22,4 @@
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>
 </div>
+@endsection

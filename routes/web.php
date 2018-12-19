@@ -25,3 +25,6 @@ Route::middleware('verified')->group(function() {
             return '本登録が完了してます！';
     });
 });
+
+Route::resource('/posts', 'PostController');
+Route::get('/users', 'UsersController@index')->name('users');
